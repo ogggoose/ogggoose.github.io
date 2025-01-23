@@ -1,83 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Puzzle</title>
-    <link rel="stylesheet" href="design/style.css" />
-    <script type="module" src="source/Main.js"></script>
-</head>
-
-<body>
-    <header>
-        <h1>Puzzle</h1>
-        <ul class="menu">
-            <li><button data-action="preview">Pre<u>v</u>iew</button></li>
-            <li><button data-action="pause"><u>P</u>ause</button></li>
-            <li><button data-action="mute" class="mute"><u>M</u>ute</button></li>
-            <li><button data-action="exit"><u>E</u>xit</button></li>
-        </ul>
-        <div class="score">
-            <span class="placed">0</span>
-            <span class="total"></span>
-            <span class="percent"></span>
-            <span class="timer"></span>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+    <link type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRMoW7kjEwsW7BEjlzmvuthcGMtMkdNyqZw&s" rel="shortcut icon">
+<link type="Image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRMoW7kjEwsW7BEjlzmvuthcGMtMkdNyqZw&s" rel="icon">
+  </head>
+  <body>
+    <header class="header">
+      <img src="./avatar.png" alt="avatar" class="header__avatar" />
+      <h1 class="header__title">Гусев Андрей</h1>
+      <h3 class="header__subtitle">Легенда бокса</h3>
     </header>
-
-    <div class="selection">
-        <h2>Select a Puzzle</h2>
-        <ul class="selection-tabs"></ul>
-        <p class="selection-pack"></p>
-        <div class="slider-container">
-            <div class="slider-content">
-                <ul class="slider-list"></ul>
-            </div>
-            <nav class="slider-nav">
-                <a href="#" class="slider-prev" data-action="prev"></a>
-                <a href="#" class="slider-next" data-action="next"></a>
-            </nav>
-        </div>
-        <footer>
-            <p class="selection-desc"></p>
-            <button data-action="start"></button>
-        </footer>
-    </div>
-
-    <div class="pause backdrop">
-        <div class="dialog">
-            <h2>Pause</h2>
-            <p>The game is currently paused</p>
-            <button data-action="pause">Continue playing</button>
-        </div>
-    </div>
-
-    <div class="congrats backdrop">
-        <div class="dialog">
-            <h2>Congratulations!</h2>
-            <p>You completed the puzzle</p>
-            <button data-action="restart">Select a new puzzle</button>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="table">
-            <div class="content">
-                <div class="board"></div>
-            </div>
-        </div>
-        <div class="drawer">
-            <ul class="actions">
-                <li><button class="action-borders" data-action="borders">Only <u>B</u>orders</button></li>
-                <li><button class="action-split" data-action="split"><u>S</u>plit</button></li>
-            </ul>
-            <div class="primary"></div>
-            <div class="secondary"></div>
-        </div>
-    </div>
-
-    <div class="preview" data-action="preview">
-        <a href="#" class="close"></a>
-        <img src="" alt="" />
-    </div>
-</body>
+    <main>
+      <section class="links">
+        <h2 class="links__header">Недоступен</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Телеграм</p>
+            <a class="linsk__link" href="http://t.me/ogggoose">@ogggoose</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Эл. почта</p>
+            <a class="linsk__link" href="mailto:ogggoose@yandex.ru"
+              >ogggoose@yandex.ru</a
+            >
+          </li>
+          <li class="links__link">
+            <p class="links__title">Фейсбук</p>
+            <a class="linsk__link" href="http://fb.com/ogggoose"
+              >ogggoose</a
+            >
+          </li>
+          <li class="links__link">
+            <p class="links__title">ВК</p>
+            <a class="linsk__link" href="https://vk.com/og.goose">Гусев Андрей</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Гит</p>
+            <a class="linsk__link" href="https://github.com/ogggoose">github.com/ogggoose/</a>
+          </li>
+        </ul>
+      </section>
+      <section class="links">
+        <h2 class="links__header">Чем занимаюсь вечером</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Автор</p>
+            <a class="linsk__link" href="https://instagram.com/og.goose">instagram.com/og.goose</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Главред</p>
+            <a class="linsk__link" href="https://vk.com/og.goose">на своей страничке ВК</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Вдохновляюсь картой</p>
+            <a class="linsk__link" href="https://www.google.com/maps/d/edit?mid=1lVTPZVywL-fuG8musq09CWQWxcMS2FE0&ll=55.74698933198479%2C37.62036627521297&z=14">мест в Москве Германа</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Пишите</p>
+            <a class="linsk__link" href="http://t.me/ogggoose">если скучно</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <button type = "button" class="button-link" href=""> Кредо </button>
+    </footer>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
 </html>
